@@ -1,0 +1,25 @@
+Related news code kata
+======================
+
+- Please do NOT read ahead, go for one assignment at a time. Do not write your solution based on what is coming.
+- Keep your solutions in the java code, don't worry about the JSP. If you want, you can implement the JSP as well if you
+  want to see your solution work. This is about writing code and test code and learning mocking.
+- HINT: Mockito allows you to mock a class/interface and pass it to a component without setting anything up. It will
+  stub any void methods by always just returning immediately and it will return null on not implemented methods. It will
+  record method calls though, which means you can pass a mocked response to a doBeforeRender() and check which
+  setAttribute() calls were made.
+
+1. Add a component so that the right column of a news deatil page shows a related news document. It's only possible
+to relate one news document. You probably also have to adjust the hippo bean.
+
+2. The user wants to be able to relate more than one news document. Add support for this feature.
+
+3. Make sure that there isn't more than 5 related newsdocuments shown. If there are more than 5 related news documents,
+just show the first 5.
+
+4. Order the related news documents on their publication date. The newest news document should be shown first.
+
+5. News items can have a bunch of keywords. The right column should show a list of "similiar" news items based on the
+keywords. Maximum of 10 similiar news items.
+
+6. There should be a seperate list per keyword of related news items by keyword.
